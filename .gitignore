@@ -3,3 +3,4 @@
 *.opensdf
 ipch
 _mediate
+*.user

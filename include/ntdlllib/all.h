@@ -26,6 +26,6 @@
 #include <ntdlllib/ntdll.h>
 #include <ntdlllib/ntstatus.h>
 #include <ntdlllib/ntdllapi.h>
-//#include <ntdlllib/ntdllutil.h>
+#include <ntdlllib/ntdllutil.h>
 
 using namespace ntdlllib;

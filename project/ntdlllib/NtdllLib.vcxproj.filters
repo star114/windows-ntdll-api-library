@@ -21,28 +21,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\ntdlllib\all.h">
-      <Filter>헤더 파일\ntdlllib</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ntdlllib\csrss.h">
-      <Filter>헤더 파일\ntdlllib</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ntdlllib\ntdll.h">
-      <Filter>헤더 파일\ntdlllib</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ntdlllib\ntdllapi.h">
-      <Filter>헤더 파일\ntdlllib</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ntdlllib\ntstatus.h">
-      <Filter>헤더 파일\ntdlllib</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ntdlllib\ntuser.h">
-      <Filter>헤더 파일\ntdlllib</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="source\ntdlllib\ntdllapi.cpp">
+    <ClCompile Include="..\..\source\ntdlllib\ntdllapi.cpp">
       <Filter>소스 파일\ntdlllib</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\ntdlllib\ntdllutil.cpp">
+      <Filter>소스 파일\ntdlllib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\ntdlllib\all.h">
+      <Filter>헤더 파일\ntdlllib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ntdlllib\csrss.h">
+      <Filter>헤더 파일\ntdlllib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ntdlllib\ntdll.h">
+      <Filter>헤더 파일\ntdlllib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ntdlllib\ntdllapi.h">
+      <Filter>헤더 파일\ntdlllib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ntdlllib\ntdllutil.h">
+      <Filter>헤더 파일\ntdlllib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ntdlllib\ntstatus.h">
+      <Filter>헤더 파일\ntdlllib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ntdlllib\ntuser.h">
+      <Filter>헤더 파일\ntdlllib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
