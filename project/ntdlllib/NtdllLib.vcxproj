@@ -122,42 +122,42 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\..\lib\$(Platform)\</OutDir>
-    <IntDir>..\..\_mediate\$(Platform)\</IntDir>
+    <IntDir>..\..\_mediate\$(ProjectName)\$(Platform)\</IntDir>
     <TargetName>ntdlllib_mt</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
     <OutDir>..\..\lib\$(Platform)\</OutDir>
-    <IntDir>..\..\_mediate\$(Platform)\</IntDir>
+    <IntDir>..\..\_mediate\$(ProjectName)\$(Platform)\</IntDir>
     <TargetName>ntdlllib_md</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>..\..\lib\$(Platform)\</OutDir>
-    <IntDir>..\..\_mediate\$(Platform)\</IntDir>
+    <IntDir>..\..\_mediate\$(ProjectName)\$(Platform)\</IntDir>
     <TargetName>ntdlllib_mt</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
     <OutDir>..\..\lib\$(Platform)\</OutDir>
-    <IntDir>..\..\_mediate\$(Platform)\</IntDir>
+    <IntDir>..\..\_mediate\$(ProjectName)\$(Platform)\</IntDir>
     <TargetName>ntdlllib_md</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\..\lib\$(Platform)\</OutDir>
-    <IntDir>..\..\_mediate\$(Platform)\</IntDir>
+    <IntDir>..\..\_mediate\$(ProjectName)\$(Platform)\</IntDir>
     <TargetName>ntdlllib_mtd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
     <OutDir>..\..\lib\$(Platform)\</OutDir>
-    <IntDir>..\..\_mediate\$(Platform)\</IntDir>
+    <IntDir>..\..\_mediate\$(ProjectName)\$(Platform)\</IntDir>
     <TargetName>ntdlllib_mdd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>..\..\lib\$(Platform)\</OutDir>
-    <IntDir>..\..\_mediate\$(Platform)\</IntDir>
+    <IntDir>..\..\_mediate\$(ProjectName)\$(Platform)\</IntDir>
     <TargetName>ntdlllib_mtd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
     <OutDir>..\..\lib\$(Platform)\</OutDir>
-    <IntDir>..\..\_mediate\$(Platform)\</IntDir>
+    <IntDir>..\..\_mediate\$(ProjectName)\$(Platform)\</IntDir>
     <TargetName>ntdlllib_mdd</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
