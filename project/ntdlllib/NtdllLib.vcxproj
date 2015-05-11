@@ -294,13 +294,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\ntdlllib\ntdllapi.cpp" />
+    <ClCompile Include="..\..\source\ntdlllib\ntdllfiles.cpp" />
     <ClCompile Include="..\..\source\ntdlllib\ntdllutil.cpp" />
+    <ClCompile Include="..\..\source\ntdlllib\ntllobj.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\ntdlllib\all.h" />
     <ClInclude Include="..\..\include\ntdlllib\csrss.h" />
     <ClInclude Include="..\..\include\ntdlllib\ntdll.h" />
     <ClInclude Include="..\..\include\ntdlllib\ntdllapi.h" />
+    <ClInclude Include="..\..\include\ntdlllib\ntdllfiles.h" />
+    <ClInclude Include="..\..\include\ntdlllib\ntdllobj.h" />
     <ClInclude Include="..\..\include\ntdlllib\ntdllutil.h" />
     <ClInclude Include="..\..\include\ntdlllib\ntstatus.h" />
     <ClInclude Include="..\..\include\ntdlllib\ntuser.h" />

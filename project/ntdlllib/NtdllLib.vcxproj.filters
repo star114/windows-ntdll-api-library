@@ -27,6 +27,12 @@
     <ClCompile Include="..\..\source\ntdlllib\ntdllutil.cpp">
       <Filter>Source Files\ntdlllib</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\ntdlllib\ntdllfiles.cpp">
+      <Filter>Source Files\ntdlllib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ntdlllib\ntllobj.cpp">
+      <Filter>Source Files\ntdlllib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\ntdlllib\all.h">
@@ -48,6 +54,12 @@
       <Filter>Header Files\ntdlllib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\ntdlllib\ntuser.h">
+      <Filter>Header Files\ntdlllib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ntdlllib\ntdllfiles.h">
+      <Filter>Header Files\ntdlllib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ntdlllib\ntdllobj.h">
       <Filter>Header Files\ntdlllib</Filter>
     </ClInclude>
   </ItemGroup>
