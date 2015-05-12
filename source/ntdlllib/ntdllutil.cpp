@@ -3,30 +3,6 @@
 namespace ntdlllib
 {
 
-	std::wstring ntdllutil::ToKernelPath(std::wstring& str)
-	{
-		std::wstring strKernelPath;
-
-		if (!str.compare(0, 4, L"\\??\\"))
-			strKernelPath = str;
-		else
-			strKernelPath = L"\\??\\" + str;
-
-		return strKernelPath;
-	}
-
-	std::wstring ntdllutil::FromKernelPath(std::wstring& strKernelPath)
-	{
-		std::wstring strPath;
-
-		if (!strKernelPath.compare(0, 4, L"\\??\\"))
-			strPath = strKernelPath.substr(4);
-		else
-			strPath = strKernelPath;
-
-		return strPath;
-	}
-
 	BOOL ntdllutil::UnicodeStringToString(PUNICODE_STRING pusz, std::wstring& str)
 	{
 		if (NULL == pusz)

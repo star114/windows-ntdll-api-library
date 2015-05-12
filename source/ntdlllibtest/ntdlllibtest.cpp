@@ -5,40 +5,25 @@
 
 int main(int argc, _TCHAR* argv)
 {
-	// NtCreateFile must use kernel Path
-	std::wstring strPath = L"\\??\\C:\\temp\\test.txt";
-	
-	UNICODE_STRING usz = { 0, };
-	ntdllutil::StringToUnicodeString(strPath, &usz);
-	
-	OBJECT_ATTRIBUTES oa = { 0, };
-	InitializeObjectAttributes(&oa, &usz, OBJ_CASE_INSENSITIVE, NULL, NULL);
+	std::wstring strPath = L"C:\\temp\\test.txt";
 	IO_STATUS_BLOCK iostatusblock = { 0, };
-	HANDLE handle = NULL;
-	NTSTATUS status = ntdllapi::GetInstance()->NtCreateFile(
-		&handle,
-		FILE_GENERIC_READ | FILE_GENERIC_WRITE,
-		&oa,
-		&iostatusblock,
-		0,
-		FILE_ATTRIBUTE_NORMAL,
-		FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE,
-		FILE_OPEN_IF,
-		0,
-		0,
-		0);
-	if (NT_SUCCESS(status))
-		printf("%ws : handle - 0x%x information - 0x%x \n", strPath, (DWORD)handle, (DWORD) iostatusblock.Information);
-	else
-		printf("NtCreateFile failed with 0x%x\n", (DWORD)status);
+	HANDLE handle = ntdllfiles::CreateFile(strPath, &iostatusblock);
 
-	if (NULL != handle)
-		ntdllapi::GetInstance()->NtClose(handle);
+	printf("strPath:%ws - handle:%x\n", strPath.c_str(), (DWORD)handle);
 
 	if (FILE_CREATED & iostatusblock.Information)
-		printf("success to create\n");
+		printf("created file.\n");
 	else if (FILE_OPENED & iostatusblock.Information)
-		printf("success to open\n");
+		printf("opened file.\n");
+
+	ntdllutil::CloseHandle(handle);
+
+	std::wstring strDestinationPath = L"C:\\temp\\test2.txt";
+	bool f = ntdllfiles::CopyFile(strPath, strDestinationPath);
+	if (f)
+		printf("copy file %ws to %ws success\n", strPath.c_str(), strDestinationPath.c_str());
+	else
+		printf("copy file failed.\n");
 
 	return 0;
 }
